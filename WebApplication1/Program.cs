@@ -10,7 +10,7 @@ app.UseHttpsRedirection();
 
 var summaries = new[]
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    "APP-Freezing", "APP-Bracing", "APP-Chilly", "APP-Cool", "APP-Mild", "APP-Warm", "APP-Balmy", "APP-Hot", "APP-Sweltering", "APP-Scorching"
 };
 
 app.MapGet("/weatherforecast", () =>
@@ -32,3 +32,4 @@ internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
+
